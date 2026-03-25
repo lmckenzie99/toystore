@@ -1,5 +1,5 @@
 <?php
-
+require_once 'includes/database-connection.php';
   /* TO-DO: Include database-connection.php to connect to the database
           Hint: Use require_once to ensure the file is only loaded once.
                 Load this before any redirects or login logic.
@@ -7,7 +7,7 @@
   */
 
 
-
+require_once 'includes/session.php';
   /* TO-DO: Include session.php to handle login sessions
           Hint: Use require_once to avoid redeclaring functions if the file is loaded elsewhere.
                 Load this before any redirects or login logic.
