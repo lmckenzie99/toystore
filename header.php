@@ -1,9 +1,6 @@
 <?php
-include 'database-connection.php';
-    /* TO-DO: Include session.php to handle login sessions
-              Hint: Both header.php and session.php are inside the includes folder
-    */
-include 'session.php';
+require_once 'database-connection.php';
+require_once 'session.php';
 
 ?>
 
@@ -35,11 +32,6 @@ include 'session.php';
         <nav class="main-nav">
             <ul>
                 <li><a href="index.php">Toy Catalog</a></li>
-
-                <!-- TO-DO: Update this link to show "Log In" or "Log Out" depending on whether the user is logged in
-                            Hint: Check session.php for a flag variable tracking login status
-                                  Consider using the null-coalescing operator
--->
 
                   <?php if ($logged_in) : ?>
                       <li><a href="logout.php">Log Out</a></li>

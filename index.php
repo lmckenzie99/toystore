@@ -1,4 +1,5 @@
 <?php include 'includes/header.php';
+      require_once 'includes/database-connection.php';
 
     /*
      * Retrieve toy information from the database based on the toy ID.
